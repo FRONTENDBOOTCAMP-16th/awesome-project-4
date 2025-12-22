@@ -79,26 +79,26 @@
   --oragne--orange: rgba(252, 147, 0, 1);
 
   /* Text-size styles */
-  --heading-----x-x-x-l: 50.516998291015625px;
-  --heading---x-x-l: 37.89699935913086px;
-  --heading---x-l: 28.43000030517578px;
-  --heading---large: 21.327999114990234px;
-  --heading---medium: 16px;
-  --label---x-x-l: 37.89699935913086px;
-  --label---x-l: 28.43000030517578px;
-  --label---large: 21.327999114990234px;
-  --label---medium: 16px;
-  --label---small: 12.003000259399414px;
-  --paragraph---x-l: 28.43000030517578px;
-  --paragraph---large: 21.327999114990234px;
-  --paragraph---medium: 16px;
-  --paragraph---small: 12.003000259399414px;
+  --heading-----x-x-x-l: 3.1573rem;
+  --heading---x-x-l: 2.3686rem;
+  --heading---x-l: 1.7769rem;
+  --heading---large: 1.333rem;
+  --heading---medium: 1rem;
+  --label---x-x-l: 2.3686rem;
+  --label---x-l: 1.7769rem;
+  --label---large: 1.333rem;
+  --label---medium: 1rem;
+  --label---small: 0.7502rem;
+  --paragraph---x-l: 1.7769rem;
+  --paragraph---large: 1.333rem;
+  --paragraph---medium: 1rem;
+  --paragraph---small: 0.7502rem;
 
   /* Effect styles */
-  --above---high: 0px -16px 48px rgba(0, 0, 0, 0.3);
-  --above---medium: 0px -8px 36px rgba(0, 0, 0, 0.2);
-  --above---low: 0px -4px 24px rgba(0, 0, 0, 0.1);
-  --below---high: 0px 16px 48px rgba(0, 0, 0, 0.3);
-  --below---medium: 0px 8px 36px rgba(0, 0, 0, 0.2);
-  --below---low: 0px 4px 24px rgba(0, 0, 0, 0.1);
+  --above---high: 0rem -1rem 3rem rgba(0, 0, 0, 0.3);
+  --above---medium: 0rem -0.5rem 2.25rem rgba(0, 0, 0, 0.2);
+  --above---low: 0rem -0.25rem 1.5rem rgba(0, 0, 0, 0.1);
+  --below---high: 0rem 1rem 3rem rgba(0, 0, 0, 0.3);
+  --below---medium: 0rem 0.5rem 2.25rem rgba(0, 0, 0, 0.2);
+  --below---low: 0rem 0.25rem 1.5rem rgba(0, 0, 0, 0.1);
 }
