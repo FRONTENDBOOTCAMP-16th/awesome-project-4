@@ -1,0 +1,15 @@
+/* 기본 글꼴 */
+body {
+  font-family: "Pretendard Variable", sans-serif;
+}
+
+/* 링크 스타일 */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 여백  */
+.spacing-20 {
+  margin: 20px;
+}
