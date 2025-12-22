@@ -1,6 +1,6 @@
-@import "tailwindcss";
+@import './common/modern-reset.css';
+@import './common/a11y.css';
+@import './common/base.css';
+@import './common/theme.css';
 
-@theme{
-  --font-sans: "Pretendard Variable", sans-serif;
-
-}
+@import './default.css';
