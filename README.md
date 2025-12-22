@@ -1,4 +1,4 @@
-# Project(Tailwindcss)
+# Project(CSS)
 
 멋쟁이 사자처럼 프론트엔드 부트캠프💕
 
