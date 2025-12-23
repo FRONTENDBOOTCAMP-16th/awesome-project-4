@@ -13,23 +13,27 @@
   <body>
     <a href="/index.html">Index로 이동</a>
     <hr />
-    <header>
-      <div>
+    <header class="header">
+      <div class="header-inner">
         <h1>
-          <a href="/">UT</a>
+          <a href="/"><img src="/src/img/logo-uber.svg" alt="" /></a>
         </h1>
 
-        <nav>
-          <ul>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-          </ul>
+        <nav class="menu" aria-label="주요 메뉴">
+          <a class="menu-list select" href="#">기업 정보</a>
+          <a class="menu-list" href="#">안전</a>
+          <a class="menu-list" href="#">고객지원</a>
+          <a class="menu-list" href="#">차량 서비스</a>
+          <a class="menu-list select" href="#">기사지원</a>
         </nav>
 
-        <div>
-          <a href="#">가입하기</a>
+        <div class="header-right">
+          <button class="lang" type="button" aria-haspopup="listbox" aria-expanded="false">KO-KR</button>
+
+          <a class="btn-signup" href="#">가입하기</a>
+          <div class="menu">
+            <img src="/src/img/icon-menu.svg" alt="" />
+          </div>
         </div>
       </div>
     </header>
