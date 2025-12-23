@@ -3,5 +3,6 @@
 @import './common/base.css';
 @import './common/theme.css';
 
-@import './default.css';
+@import './appDown.css';
+@import './form.css';
 @import './footer.css';
