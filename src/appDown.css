@@ -1,0 +1,71 @@
+.app-download {
+  background: var(--tertiary);
+
+  .app-download-inner {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+
+    padding: 24px 40px;
+
+    @media (min-width: 850px) {
+      & {
+        padding: 32px 56px;
+      }
+    }
+
+    @media (min-width: 1680px) {
+      & {
+        padding: 64px;
+      }
+    }
+  }
+
+  h2 {
+    font-size: var(--heading---large);
+
+    @media (min-width: 850px) {
+      & {
+        font-size: var(--heading---x-l);
+      }
+    }
+
+    @media (min-width: 1680px) {
+      & {
+        font-size: var(--heading---x-x-l);
+      }
+    }
+  }
+
+  .downaload-list {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+
+    margin: 36px 0 0;
+
+    @media (min-width: 1680px) {
+      & {
+        flex-direction: row;
+      }
+    }
+  }
+
+  .downaload-item {
+    background: var(--secondary);
+    width: 100%;
+    min-width: 452px;
+  }
+
+  .download-card {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    column-gap: 36px;
+    padding: 40px 25px 40px 18px;
+
+    p {
+      font-size: var(--label---large);
+    }
+  }
+}

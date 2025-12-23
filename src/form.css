@@ -1,0 +1,165 @@
+.driver-signup {
+  width: 100%;
+  min-width: 500px;
+  margin: 0 auto;
+  padding: 40px 24px;
+
+  h2 {
+    font-size: var(--heading---x-l);
+    letter-spacing: -0.02em;
+    color: var(--primary);
+  }
+
+  .signup-tit-box {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 36px 0 0;
+  }
+
+  .signup-tit {
+    font-size: var(--label---large);
+    font-weight: 700;
+    color: var(--primary);
+  }
+}
+
+.signup-more {
+  position: relative;
+  font-size: var(--label---medium);
+  font-weight: 600;
+  color: var(--primary);
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: -4px;
+    width: 78px;
+    height: 1px;
+    background: var(--contents--content-tertiary);
+  }
+}
+
+/* 폼 */
+form {
+  margin: 36px 0 0;
+
+  fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+}
+
+.field {
+  display: block;
+  margin: 0 0 16px 0;
+}
+
+.field_input {
+  width: 100%;
+  height: 46px;
+  padding: 0 12px;
+  border: 1px solid var(--border----border-transparent);
+  background: var(--tertiary);
+  font-size: var(--paragraph---medium);
+  outline: none;
+
+  &::placeholder {
+    color: var(--contents--content-secondary);
+  }
+
+  &.email {
+    border: 2px solid var(--contents--content-primary);
+    &::placeholder {
+      font-weight: 500;
+      color: var(--contents--content-primary);
+    }
+  }
+}
+
+/* 에러 상태 */
+.field-error {
+  .field_input {
+    border: 2px solid var(--info--negative);
+    background: var(--negative-tranparent);
+
+    &::placeholder {
+      font-weight: 500;
+      color: var(--contents--content-primary);
+    }
+  }
+
+  .field-help {
+    margin: 3px 0 0;
+    font-size: var(--paragraph---small);
+    line-height: 1;
+  }
+
+  .field-help-error {
+    color: var(--negative);
+  }
+}
+
+/* 약관 문구 */
+.form-notice {
+  margin: 36px 0 0;
+  font-size: var(--paragraph---small);
+  line-height: 1.4;
+  color: var(--contents--content-primary);
+}
+
+/* 버튼 영역 */
+.login-guide-box {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  margin: 36px 0 0;
+
+  .btn-join {
+    height: 45px;
+    padding: 0 24px;
+    background: var(--primary);
+    font-weight: 700;
+    font-size: var(--label---medium);
+    color: var(--secondary);
+    cursor: pointer;
+  }
+  .btn-join:hover {
+    filter: brightness(0.95);
+  }
+
+  .login-guide {
+    display: flex;
+    gap: 16px;
+
+    .login_txt {
+      margin: 0;
+      font-size: 13px;
+      color: #555;
+    }
+
+    .login {
+      position: relative;
+      font-weight: 700;
+      color: var(--contents--content-primary);
+
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: -4px;
+        width: 50px;
+        height: 1px;
+        background: var(--contents--content-tertiary);
+      }
+    }
+  }
+}
