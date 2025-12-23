@@ -1,0 +1,57 @@
+/* about styles */
+body {
+  background: var(--white);
+}
+
+.info {
+  padding: 40px 24px;
+}
+
+.info ul {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card img {
+  width: 24px;
+  height: 24px;
+}
+
+.card h3 {
+  font-size: var(--label--large);
+}
+
+.card p {
+  font-size: var(--paragraph---medium);
+}
+
+.card a {
+  text-decoration: underline;
+}
+
+/* 태블릿 */
+@media (min-width: 768px) {
+  .info ul {
+    flex-direction: row;
+    gap: 36px;
+  }
+
+  .info ul > li {
+    flex: 1;
+  }
+}
+
+/* 데스트탑 */
+@media (min-width: 1024px) {
+  .info {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+}
