@@ -1,0 +1,39 @@
+.qnalist {
+  background: pink;
+  padding-block: 40px;
+  padding-inline: 24px;
+
+  summary {
+    list-style: none;
+    position: relative;
+    padding-block: 16px;
+    padding-inline: 20px;
+    border-bottom: 1px solid gray;
+  }
+
+  summary::after {
+    content: url(/src/img/plus.svg);
+    position: absolute;
+    right: 16px;
+  }
+
+  details {
+    display: block;
+    background: lightsteelblue;
+  }
+
+  details > *:not(summary) {
+    padding: 24px;
+    background: yellow;
+  }
+
+  details[open] {
+    summary::after {
+      content: url(/src/img/minus.svg);
+    }
+
+    summary {
+      border-bottom: none;
+    }
+  }
+}
