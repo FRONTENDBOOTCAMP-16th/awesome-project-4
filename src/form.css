@@ -2,7 +2,7 @@
   width: 100%;
   min-width: 500px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 40px 24px;
 
   h2 {
     font-size: var(--heading---x-l);
