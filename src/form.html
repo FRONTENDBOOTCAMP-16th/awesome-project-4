@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>우버 - form</title>
+    <link rel="icon" href="/vite.svg" />
+    <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" />
+    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <a href="/index.html">Index로 이동</a>
+    <hr />
+
+    <section class="driver-signup" aria-labelledby="driver-signup-tit">
+      <h2 id="driver-signup-tit">UT로 운행하기</h2>
+
+      <div class="signup-tit-box">
+        <h3 class="signup-tit">기사로 가입하기</h3>
+        <a class="signup-more" href="#">자세히보기</a>
+      </div>
+
+      <form class="form" action="#" method="post" novalidate>
+        <fieldset>
+          <legend class="sr-only">기사 가입 정보 입력</legend>
+
+          <!-- 이름/성 -->
+          <div class="form-grid">
+            <label class="field">
+              <span class="sr-only">이름</span>
+              <input class="field_input" type="text" name="firstName" placeholder="이름" />
+            </label>
+
+            <label class="field">
+              <span class="sr-only">성</span>
+              <input class="field_input" type="text" name="lastName" placeholder="성" />
+            </label>
+          </div>
+
+          <!-- 이메일 -->
+          <label class="field">
+            <span class="sr-only">이메일</span>
+            <input class="field_input email" type="email" name="email" placeholder="이메일" />
+          </label>
+
+          <!-- 비밀번호 (에러 상태 예시) -->
+          <label class="field field-error">
+            <span class="sr-only">비밀번호</span>
+            <input class="field_input pw" type="password" name="password" placeholder="비밀번호" aria-invalid="true" aria-describedby="pw-error" />
+            <small id="pw-error" class="field-help field-help-error">비밀번호가 틀렸습니다.</small>
+          </label>
+
+          <!-- 전화번호 -->
+          <label class="field">
+            <span class="sr-only">전화번호</span>
+            <input class="field_input" type="tel" name="phone" placeholder="전화번호" />
+          </label>
+
+          <!-- 위치/국가 -->
+          <label class="field">
+            <span class="sr-only">지역</span>
+            <input class="field_input" type="text" name="location" placeholder="Seoul, Korea, Republic of (South Korea)" />
+          </label>
+
+          <!-- 약관 문구 -->
+          <p class="form-notice">“계속”을 선택하면 약관과 개인정보 보호정책을 확인했으며 이에 동의한 것으로 간주됩니다. 또한 위에 입력한 번호로 UT LLC 및 그 계열사(‘통합하여 “UT”’)가 ARS 등을 이용하여 정보제공이나 마케팅 목적으로 연락할 권리가 SMS 메시지를 수신할 수 있도록 동의합니다. 마케팅 메시지 수신 동의는 UT 서비스 이용을 위한 필수 조건은 아닙니다. 더 이상 메시지 수신을 원하지 않으면 언제든지 892032번호로 “STOP”이라고 문자 메시지를 보내 수신을 거부할 수 있습니다.</p>
+
+          <!-- 하단 버튼/로그인 -->
+          <div class="login-guide-box">
+            <button class="btn btn-join" type="submit">가입하기</button>
+            <div class="login-guide">
+              <p class="login_txt">이미 계정이 있으신가요?</p>
+              <a class="login" href="#">로그인</a>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+  </body>
+</html>
